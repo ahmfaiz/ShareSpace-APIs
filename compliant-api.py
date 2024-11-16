@@ -68,8 +68,8 @@ def check_compliance():
         print("Blacklisted word found")
         return jsonify({"compliant": False, "reason": "Does not comply with our Term of Service"})
 
-    if not image or not description:
-        print("Image and description are required")
+    if not image or not description or not name:
+        print("Image, Name and Description are required")
         return jsonify({"error": "Image and description are required"}), 400
 
     # Ensure the image is in a supported format

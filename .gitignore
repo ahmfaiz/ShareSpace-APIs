@@ -1,0 +1,42 @@
+# Python-related files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+*.venv
+*.egg
+*.egg-info/
+dist/
+build/
+*.dist-info/
+
+# Environment variables
+.env
+*.key
+*.pem
+
+# Byte-compiled, cache, and logs
+*.log
+*.sqlite3
+*.db
+*.migrations/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Virtual environment
+venv/
+env/
+
+# IDE and editor files
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Git
+*.swp
+*.swo
+.git/
