@@ -127,7 +127,7 @@ def check_compliance():
                 return jsonify({"error": "Invalid JSON response from the model"})
 
     except:
-        return jsonify({"compliant": False, "reason": "Does not comply with our Term of Service"})
+        return jsonify({"compliant": False, "reason": "Either the product does not comply with our TOS or Services are down."})
     finally:
         # Clean up the temporary file
         os.remove(temp_file_path)
